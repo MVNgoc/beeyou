@@ -18,9 +18,15 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "paths": {
+      "@src/*": ["./src/*"],
+      "@types": ["./src/types"],
+      "@assets/*": ["./src/assets/*"],
+      "@components": ["./src/components"],
+      "@constants/*": ["./src/constants/*"]
+    },
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src/**/*", "src/custom.d.ts"],
+  "exclude": ["node_modules"]
 }
