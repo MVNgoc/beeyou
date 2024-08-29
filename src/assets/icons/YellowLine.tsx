@@ -12,7 +12,7 @@ export const YellowLine = () => {
       <path
         d="M-49 144C1.28261 113.793 149.647 55.7058 340.845 65.0174C579.843 76.657 713.309 40.0756 722 1"
         stroke="url(#paint0_linear_1_831)"
-        stroke-width="2"
+        strokeWidth="2"
       />
       <defs>
         <linearGradient
@@ -23,8 +23,8 @@ export const YellowLine = () => {
           y2="-113.951"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFAF00" />
-          <stop offset="1" stop-color="#FFDC00" />
+          <stop stopColor="#FFAF00" />
+          <stop offset="1" stopColor="#FFDC00" />
         </linearGradient>
       </defs>
     </svg>

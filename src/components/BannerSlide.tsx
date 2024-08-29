@@ -34,7 +34,7 @@ export const BannerSlide = () => {
       <Swiper
         loop={true}
         spaceBetween={30}
-        autoplay={false}
+        autoplay={true}
         speed={500}
         pagination={true}
         navigation={{
@@ -43,15 +43,15 @@ export const BannerSlide = () => {
         }}
         slidesPerView={1}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+        className="mySwiper bannerSlide"
       >
         {slideData.map(slide => (
           <SwiperSlide key={slide?.id}>
-            <div className="relative w-full">
+            <div className="relative w-full border border-Silver_Sand shadow-shadow_1 rounded-lg lg:rounded-3xl">
               <img
                 src={slide?.image}
                 alt="SlideBanner"
-                className="w-full object-cover h-[480px] mx-auto rounded-[24px]"
+                className="w-full object-cover h-[122px] lg:h-[480px] mx-auto rounded-lg lg:rounded-3xl"
               />
             </div>
           </SwiperSlide>

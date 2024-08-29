@@ -9,7 +9,7 @@ export const Button = ({ children, className }: ButtonProps) => {
   return (
     <button
       type="button"
-      className={`${className} flex justify-center items-center py-2 px-6 rounded-xl bg-Philippine_Yellow`}
+      className={`${className} flex justify-center items-center py-2 px-6 rounded-xl bg-Philippine_Yellow hover:bg-Sunglow`}
     >
       {children}
     </button>

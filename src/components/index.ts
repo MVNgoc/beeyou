@@ -1,3 +1,5 @@
 export * from './BannerSlide'
 export * from './Button'
 export * from './ProductSlide'
+export * from './VerticalSlide'
+export * from './InstagramSlide'

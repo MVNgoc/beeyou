@@ -4,6 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import '../style/Slide.scss';
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -18,25 +20,45 @@
 
 @media screen and (max-width: 430px) {
   .container {
-    margin: 0 24px;
+    padding: 0 24px;
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    flex-direction: row !important;
+    gap: 40px;
+  }
+
+  .section-2 {
+    max-height: 735px;
+    height: 735px;
   }
 }
 
 .navbar {
   display: flex;
-  gap: 40px;
+  flex-direction: column;
+  align-items: end;
+  gap: 10px;
 }
 
 .navbar li {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
+  padding: 12px;
   position: relative;
   cursor: pointer;
 }
 
-.navbar li:hover {
+.navbar li > p {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar li:hover > p {
   &::after {
     content: '';
     display: block;
@@ -45,7 +67,7 @@
     background-color: #ffc800;
     border-radius: 6px;
     position: absolute;
-    bottom: 0px;
+    bottom: 1px;
     z-index: -1;
     animation: slide 0.2s ease-in-out;
   }
@@ -60,31 +82,38 @@
   }
 }
 
-.swiper-slide {
-  padding-bottom: 57px;
-}
-
-.swiper .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #ffffff;
-  opacity: 1;
-}
-
-.swiper .swiper-pagination-bullet-active {
-  background-color: #ffc800;
-}
-
 .section-2 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  max-height: 735px;
-  height: 735px;
 }
 
 .content-box {
   fill: #fff;
   filter: drop-shadow(0px 6px 36px rgba(0, 0, 0, 0.1));
   background-color: #fff;
+  max-height: 453px;
+  width: fit-content;
+}
+
+.buy-now-button,
+.content-box-background {
+  display: none;
+}
+
+.bg-modal {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.animation-slip {
+  animation: slip 0.3s ease-in-out;
+}
+
+@keyframes slip {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

@@ -12,42 +12,42 @@ export const ArrowVerticalIcon = () => {
       <path
         d="M12 5.45453V18.5454"
         stroke="black"
-        stroke-width="1.63636"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.63636"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M15.2727 15.2727L12 18.5454L8.72729 15.2727"
         stroke="black"
-        stroke-width="1.63636"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.63636"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M8.72729 8.72726L12 5.45453L15.2727 8.72726"
         stroke="black"
-        stroke-width="1.63636"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.63636"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M19.3636 3H4.63635"
         stroke="black"
-        stroke-width="1.63636"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.63636"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M19.3636 21H4.63635"
         stroke="black"
-        stroke-width="1.63636"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.63636"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

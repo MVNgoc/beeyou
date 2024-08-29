@@ -8,3 +8,7 @@ export * from './ZipperIcon';
 export * from './ColorIcon';
 export * from './ArrowVerticalIcon';
 export * from './CottonIcon';
+export * from './InstagramSectionIcon';
+export * from './ArrowUp';
+export * from './ArrowDown';
+export * from './MoreIcon';
