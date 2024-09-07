@@ -18,136 +18,15 @@ import {
 } from '../components/index';
 import section2_frame1 from '../assets/image/section2-frame1.png';
 import section2_frame2 from '../assets/image/section2-frame2.png';
-import section2_frame3 from '../assets/image/section2-frame3.png';
-import pink_bag from '../assets/image/product/pink-bag.png';
-import pink_bag_2 from '../assets/image/product/pink-bag2.png';
-import black_bag from '../assets/image/product/black-bag.png';
-import black_bag2 from '../assets/image/product/black-bag2.png';
-import yellow_bag from '../assets/image/product/yellow-bag.png';
-import white_bag from '../assets/image/product/white-bag.png';
-import white_bag2 from '../assets/image/product/white-bag2.png';
-import blue_bag from '../assets/image/product/blue-bag.png';
 import bag_banner from '../assets/image/bag_banner.png';
-import cmt_1 from '../assets/image/cmt_1.png';
-import cmt_2 from '../assets/image/cmt_2.png';
-import cmt_3 from '../assets/image/cmt_3.png';
+import section2_frame3 from '../assets/image/section2-frame3.png';
 import { Link } from 'react-router-dom';
-
-const bestseller_product_data = [
-  {
-    id: 1,
-    name: 'Túi Totes Cactus Bag nữ tính xành điệu',
-    price: 320000,
-    image: pink_bag
-  },
-  {
-    id: 2,
-    name: 'Túi Totes Cactus Bag nữ tính xành điệu',
-    price: 320000,
-    image: black_bag
-  },
-  {
-    id: 3,
-    name: 'Túi Totes Cactus Bag nữ tính xành điệu',
-    price: 320000,
-    image: yellow_bag
-  },
-  {
-    id: 4,
-    name: 'Túi Totes Cactus Bag nữ tính xành điệu',
-    price: 320000,
-    image: white_bag
-  }
-];
-
-const featured_product_data = [
-  {
-    id: 1,
-    name: 'Túi Totes Cactus Bag nữ tính xành điệu',
-    price: 320000,
-    image: blue_bag
-  },
-  {
-    id: 2,
-    name: 'Túi Totes Cactus Bag nữ tính xành điệu',
-    price: 320000,
-    image: white_bag2
-  },
-  {
-    id: 3,
-    name: 'Túi Totes Cactus Bag nữ tính xành điệu',
-    price: 320000,
-    image: pink_bag_2
-  },
-  {
-    id: 4,
-    name: 'Túi Totes Cactus Bag nữ tính xành điệu',
-    price: 320000,
-    image: black_bag2
-  }
-];
-
-const verticleSlideData = [
-  {
-    id: 1,
-    image: cmt_2
-  },
-  {
-    id: 2,
-    image: cmt_1
-  },
-  {
-    id: 3,
-    image: cmt_3
-  },
-  {
-    id: 4,
-    image: cmt_2
-  },
-  {
-    id: 5,
-    image: cmt_1
-  },
-  {
-    id: 6,
-    image: cmt_3
-  }
-];
-
-const instagramData = [
-  {
-    id: 1,
-    image: pink_bag
-  },
-  {
-    id: 2,
-    image: black_bag
-  },
-  {
-    id: 3,
-    image: yellow_bag
-  },
-  {
-    id: 4,
-    image: white_bag
-  },
-  {
-    id: 5,
-    image: blue_bag
-  },
-  {
-    id: 6,
-    image: white_bag2
-  },
-  {
-    id: 7,
-    image: pink_bag_2
-  },
-  {
-    id: 8,
-    image: black_bag2
-  }
-];
+import {
+  bestseller_product_data,
+  featured_product_data,
+  instagramData,
+  verticleSlideData
+} from '../constants/data.constant';
 
 const HomePage = () => {
   return (
@@ -187,11 +66,11 @@ const HomePage = () => {
                 className="max-h-[407px] lg:max-h-[605px]"
               />
             </div>
-            <div className="absolute bottom-[29px] lg:left-[68px] lg:bottom-[94px] -mx-6 z-0">
+            <div className="absolute bottom-[29px] left-[-50vw] lg:left-[68px] lg:bottom-[94px] -mx-6 z-0">
               <img
                 src={section1_frame1}
                 alt=""
-                className="max-h-[273px] lg:max-h-[385px]"
+                className="max-h-[260px] lg:max-h-[385px] object-cover"
               />
             </div>
             <div className="absolute right-[43%] bottom-[-35%] lg:bottom-[-40px] lg:left-[-130px] lg:w-[771px]">
@@ -336,7 +215,7 @@ const HomePage = () => {
               nha. Hông tin lên <br /> facebook mà xem.
             </p>
           </div>
-          <div className='lg:mt-10'>
+          <div className="lg:mt-10">
             <VerticalSlide verticleSlideData={verticleSlideData} />
           </div>
         </div>
