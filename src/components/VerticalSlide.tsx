@@ -13,7 +13,7 @@ type verticleSlideProps = {
 export const VerticalSlide = ({ verticleSlideData }: verticleSlideProps) => {
   return (
     <div className="relative">
-      <div className="flex lg:flex-col gap-4 absolute bottom-[-57px] justify-center w-full lg:w-fit lg:bottom-auto lg:-right-[7px] lg:top-[50%] z-[99]">
+      <div className="flex lg:flex-col gap-4 absolute bottom-[-57px] justify-center w-full lg:w-fit lg:bottom-auto lg:right-[31px] lg:top-[50%] z-[99]">
         <Button className="swiper-button-prev w-10 h-10 !rounded-[100%] !p-0 cursor-pointer">
           <ArrowUp className="-rotate-90 lg:rotate-0" />
         </Button>
@@ -43,12 +43,12 @@ export const VerticalSlide = ({ verticleSlideData }: verticleSlideProps) => {
         }}
         direction={'vertical'}
         modules={[Pagination, Autoplay, Navigation]}
-        className="mySwiper verticalSwiper max-h-[370px] lg:max-h-[700px] lg:h-[700px] !pt-0"
+        className="mySwiper verticalSwiper max-h-fit lg:h-[700px] !pt-0"
       >
         {verticleSlideData.map((item: any) => (
           <SwiperSlide key={item?.id} className="w-fit">
             <div className="shadow-shadow_2 w-fit">
-              <img src={item.image} alt="cmt" width={500}/>
+              <img src={item.image} alt="cmt" width={462}/>
             </div>
           </SwiperSlide>
         ))}

@@ -34,7 +34,7 @@ const HomePage = () => {
       <div className="container">
         <BannerSlide />
         <section className="section-2 mt-[64px] lg:mt-[93px] relative flex flex-col">
-          <div className="flex flex-col lg:flex-row justify-between order-1 mt-[83px] lg:mt-0">
+          <div className="flex flex-col lg:flex-row justify-between order-1 mt-[87.18px] lg:mt-0">
             <div className="w-full lg:max-w-[530px]" data-aos="fade-right">
               <p className="text-2xl lg:text-[48px] font-bold leading-9 lg:leading-[72px]">
                 Tote của BeeYou cam kết mang đến sự hài lòng tối đa cho bạn
@@ -73,7 +73,7 @@ const HomePage = () => {
                 className="max-h-[260px] lg:max-h-[385px] object-cover"
               />
             </div>
-            <div className="absolute right-[43%] bottom-[-35%] lg:bottom-[-40px] lg:left-[-130px] lg:w-[771px]">
+            <div className="absolute right-[34vw] bottom-[-40vw] lg:bottom-[-40px] lg:left-[-130px] lg:w-[771px]">
               <YellowLine />
             </div>
           </div>
