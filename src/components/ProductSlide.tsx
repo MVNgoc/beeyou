@@ -34,7 +34,6 @@ export const ProductSlide = ({ data }: ProductSlideProps) => {
     <>
       <Swiper
         loop={true}
-        spaceBetween={8}
         autoplay={false}
         speed={500}
         pagination={false}
@@ -87,7 +86,7 @@ export const ProductSlide = ({ data }: ProductSlideProps) => {
                   </Button>
                 </div>
               </div>
-              <div className="hidden content-box-background absolute -top-3 -right-3 -z-10">
+              <div className="hidden content-box-background absolute -top-3 -right-5 -z-10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="242"
