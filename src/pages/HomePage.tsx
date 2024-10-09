@@ -7,7 +7,8 @@ import {
   CottonIcon,
   InstagramSectionIcon,
   YellowLine,
-  ZipperIcon
+  ZipperIcon,
+  YellowLineMb
 } from '../assets/icons/index';
 import {
   BannerSlide,
@@ -36,9 +37,9 @@ const HomePage = () => {
         <section className="section-2 mt-[64px] lg:mt-[93px] relative flex flex-col">
           <div className="flex flex-col lg:flex-row justify-between order-1 mt-[87.18px] lg:mt-0">
             <div className="w-full lg:max-w-[530px]" data-aos="fade-right">
-              <p className="text-2xl lg:text-[48px] font-bold leading-9 lg:leading-[72px]">
+              <h1 className="text-2xl lg:text-[48px] font-bold leading-9 lg:leading-[72px]">
                 Tote của BeeYou cam kết mang đến sự hài lòng tối đa cho bạn
-              </p>
+              </h1>
             </div>
             <div className="w-full lg:max-w-[390px]" data-aos="fade-left">
               <p className="text-base lg:text-base font-normal leading-6">
@@ -73,8 +74,11 @@ const HomePage = () => {
                 className="max-h-[260px] lg:max-h-[385px] object-cover"
               />
             </div>
-            <div className="absolute right-[34vw] bottom-[-40vw] lg:bottom-[-40px] lg:left-[-130px] lg:w-[771px]">
+            <div className="absolute right-[34vw] bottom-[-40vw] lg:bottom-[-40px] lg:left-[-130px] lg:w-[771px] hidden md:block">
               <YellowLine />
+            </div>
+            <div className="absolute md:hidden -left-[28px]">
+              <YellowLineMb />
             </div>
           </div>
         </section>
@@ -124,7 +128,7 @@ const HomePage = () => {
                   <p>Túi có khoá kéo, túi con tiện lợi cho nàng sử dụng</p>
                 </div>
               </div>
-              <Button className="mt-4 w-full lg:mt-[22px] lg:w-fit">
+              <Button className="mt-4 w-full lg:mt-[22px] lg:w-[170px]">
                 <p className="text-base font-bold leading-6">Tìm hiểu thêm</p>
               </Button>
             </div>
@@ -215,7 +219,7 @@ const HomePage = () => {
               nha. Hông tin lên <br /> facebook mà xem.
             </p>
           </div>
-          <div className="lg:mt-10">
+          <div className="lg:mt-10 -mx-6">
             <VerticalSlide verticleSlideData={verticleSlideData} />
           </div>
         </div>

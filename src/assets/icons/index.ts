@@ -12,3 +12,4 @@ export * from './InstagramSectionIcon';
 export * from './ArrowUp';
 export * from './ArrowDown';
 export * from './MoreIcon';
+export * from './YellowLineMb';

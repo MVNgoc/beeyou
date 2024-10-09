@@ -58,14 +58,14 @@ export const ProductSlide = ({ data }: ProductSlideProps) => {
             key={product?.id}
             className="max-w-[152px] lg:max-w-[285px] lg:!w-[285px]"
           >
-            <div className="relative slide-container">
-              <div className="p-1 lg:p-6 content-box rounded-xl">
+            <div className="relative slide-container min-h-[397px]">
+              <div className="relative p-1 lg:p-6 content-box rounded-xl lg:max-w-[285px] lg:!w-[285px] min-h-[397px]">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="h-[144px] rounded-lg lg:h-[237px] lg:rounded-2xl"
+                  className="h-[144px] rounded-lg lg:h-[237px] lg:rounded-2xl "
                 />
-                <div className='px-2 lg:px-0'>
+                <div className="px-2 lg:px-0">
                   <div className="mt-[9px] lg:px-0 lg:mt-3 flex flex-col gap-2 lg:gap-1 text-base font-bold leading-6">
                     <h4>{product.name}</h4>
                     <p className="opacity-80 text-Secondary">
@@ -86,7 +86,7 @@ export const ProductSlide = ({ data }: ProductSlideProps) => {
                   </Button>
                 </div>
               </div>
-              <div className="hidden content-box-background absolute -top-3 -right-5 -z-10">
+              <div className="hidden content-box-background absolute -top-3 -right-3 -z-10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="242"
