@@ -57,12 +57,14 @@ img {
   cursor: pointer;
 }
 
-.navbar li > p {
+.navbar li > p,
+.footer-style .footer-item {
   position: relative;
   z-index: 1;
 }
 
-.navbar li:hover > p {
+.navbar li:hover > p,
+.footer-style .footer-item:hover {
   &::after {
     content: '';
     display: block;
@@ -74,6 +76,12 @@ img {
     bottom: 1px;
     z-index: -1;
     animation: slide 0.2s ease-in-out;
+  }
+}
+
+.footer-style .footer-item:hover {
+  &::after {
+    bottom: 10px;
   }
 }
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { BagIcon, BeeYouLogo, MoreIcon } from '../../assets/icons';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -58,16 +59,16 @@ const Header = () => {
         >
           <ul className="navbar">
             <li>
-              <p>Trang chủ</p>
+              <Link to="/">Trang chủ</Link>
             </li>
             <li>
-              <p>Tote collection</p>
+              <Link to="/">Tote collection</Link>
             </li>
             <li>
-              <p>Về chúng tôi</p>
+              <Link to="/">Về chúng tôi</Link>
             </li>
             <li>
-              <p>Liên hệ</p>
+              <Link to="/">Liên hệ</Link>
             </li>
           </ul>
         </div>
