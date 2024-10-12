@@ -219,12 +219,12 @@ const HomePage = () => {
               nha. Hông tin lên <br /> facebook mà xem.
             </p>
           </div>
-          <div className="lg:mt-10 -mx-6">
+          <div className="lg:mt-10">
             <VerticalSlide verticleSlideData={verticleSlideData} />
           </div>
         </div>
       </section>
-      <section className="mt-[115px] mb-3 lg:mb-[22px]">
+      <section className="mt-[115px]">
         <div
           className="flex flex-col gap-1 justify-center items-center text-center"
           data-aos="zoom-in"
@@ -246,7 +246,7 @@ const HomePage = () => {
               </u>
             </Link>
           </div>
-          <div className="-mt-5 max-w-[100vw] w-[100vw] overflow-hidden">
+          <div className="mt-10 max-w-[100vw] w-[100vw] overflow-hidden">
             <InstagramSlide data={instagramData} />
           </div>
         </div>

@@ -21,8 +21,8 @@ export const VerticalSlide = ({ verticleSlideData }: verticleSlideProps) => {
           <ArrowDown className="-rotate-90 lg:rotate-0" />
         </Button>
       </div>
-      <div className="absolute top-0 h-[102px] md:h-[150px] w-full bg-Cultured z-50 bg-opacity-top-to-bottom"></div>
-      <div className="absolute bottom-0 lg:bottom-0 h-[102px] md:h-[150px] w-full bg-Cultured bg-opacity-bottom-to-top z-50"></div>
+      {/* <div className="absolute top-0 h-[102px] md:h-[150px] w-full bg-Cultured z-50 bg-opacity-top-to-bottom"></div>
+      <div className="absolute bottom-0 lg:bottom-0 h-[102px] md:h-[150px] w-full bg-Cultured bg-opacity-bottom-to-top z-50"></div> */}
       <Swiper
         loop={false}
         autoplay={false}
@@ -43,16 +43,16 @@ export const VerticalSlide = ({ verticleSlideData }: verticleSlideProps) => {
         }}
         direction={'vertical'}
         modules={[Pagination, Autoplay, Navigation]}
-        className="mySwiper verticalSwiper !max-h-[362px] lg:h-[700px] !pt-0"
+        className="mySwiper verticalSwiper max-h-[362px] lg:max-h-[520.5px] lg:h-[520.5px] !pt-0"
       >
         {verticleSlideData.map((item: any) => (
           <SwiperSlide key={item?.id} className="w-full">
-            <div className="w-full h-fit shadow-shadow_2">
+            <div className="w-full md:max-w-[462px] h-fit shadow-shadow_2">
               <img
                 src={item.image}
                 alt="cmt"
                 width={462}
-                className="w-[312px] md:w-auto mx-auto"
+                className="w-full md:max-w-[462px] mx-auto"
               />
             </div>
           </SwiperSlide>

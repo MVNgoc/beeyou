@@ -1,14 +1,6 @@
 .productSlide,
 .bannerSlide {
-  overflow: initial !important;
-}
-
-.verticalSwiper .swiper {
-  overflow: hidden !important;
-}
-
-.verticalSwiper .swiper-wrapper {
-  padding: 0px;
+  overflow: visible !important;
 }
 
 .swiper .swiper-pagination-bullet {
@@ -31,12 +23,12 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .swiper {
-    overflow: hidden !important;
-  }
+  // .swiper {
+  //   overflow: hidden !important;
+  // }
 
   .swiper-wrapper {
-    padding: 56px 0px !important;
+    padding: 0px !important;
   }
 
   .swiper .swiper-pagination-bullet {
@@ -52,10 +44,6 @@
 
   .slide-container:hover > .content-box-background {
     display: block;
-  }
-
-  .verticalSwiper .swiper-slide {
-    margin-top: -56px;
   }
 
   // make bg opacity 0 to 1
